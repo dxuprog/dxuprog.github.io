@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>David Xu - Projects</title>
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+
+<div class="davidxu">
+	DAVID XU
+</div>
+
+<div class="navbar">
+<nav>
+	<a href="index.html">About Me</a>
+	<a href="projects.html">Projects</a>
+	<a href="content/dxu_resume_web.pdf">Resume</a>
+	<a href="http://www.github.com/dxuprog">GitHub</a>
+	<a href="http://ca.linkedin.com/in/dxu228">LinkedIn</a>
+</nav>
+</div>
+
+<div class="container">
+	<h1>Projects</h1>
+	<hr>
+	<div class="boxright">
+		<h2>Linking Android documentation to code examples on StackOverflow</h2>
+		<img class="wider" src = "androidDocs.png" />
+
+		<br>
+		<p>
+			I incorporate what I've learned in machine learning, along with my experience in software engineering to create a tool to help Android developers find code examples.
+
+		</p>
+		<p>
+			Using research and data from the Software Architecture Group at uWaterloo, myself and <a href="https://github.com/adriaanlabusc"> Adriaan </a> were able to extract Fully Qualified Names (FQNs) from StackOverflow code snippets and use them as features to build algorithms in Python for document relations.
+
+		</p>
+
+		<p>
+			We provide a usable Chrome plugin that will augment Android documentation with links to StackOverflow. The tool provides links sorted by complexity, which is a tf-idf weighted score defined by the number of different Fully Qualified Names (FQNs) that are used in the snippet. This allows the user to pick how 'detailed' their example will be. 
+		</p>
+		<p>
+			Installation instructions are located on the <a href="https://github.com/dxuprog/androidDocsAugment"> public GitHub repository</a>. We also explore augmenting of StackOverflow snippets, as well as finding related questions based on FQN features, outlined in our <a href="https://github.com/dxuprog/androidDocsAugment/blob/master/androidDocsAugmentWhitePaper.pdf"> 
+			whitepaper</a>.
+		</p>
+	</div>
+
+	<hr>
+	<div class="boxleft">
+		<h2>Canadian Income Tax Calculator</h2>
+		<img src = "incomeTax.png" class="narrower" />
+
+		<br>
+		<p>
+			After recieving my first pay-stub, I was curious about how income tax was calculated.
+			I decided to investigate the Canadian income tax system further and I thought it would be a good idea to create lightweight mobile application. This would serve as a tool to those who want to quickly estimate their post-tax salaries.
+		</p>
+		<p>
+			I became familiar with the BlackBerry 10 (C++ / Qt) develpment platform and launched the application <a href="https://appworld.blackberry.com/webstore/content/36608887/?lang=en&countrycode=US"/>on BlackBerry World</a>. But after switching my personal phone to Android, I decided to develop <a href="https://play.google.com/store/apps/details?id=davidxu.canadianincometax&hl=en" />an Android version</a> as well.
+
+			To this date, the application has recieved positive feedback and has <b>over 3500</b> cross-platform downloads.
+		</p>
+	</div>
+
+	<hr>
+	<div class="boxright">
+		<h2>Machine learning methods for neural decoding</h2>
+		<img src = "neuraldecode.png" />
+
+		<br>
+		<p>
+			I was introduced to the world of machine learning through the graduate level machine learning course at uWaterloo. For this project I worked with neurological data to investigate different machine learning methods to decode brain data. The focus was on Hippocampal place cells in a rat that act as a internal GPS. I used MATLAB, and LIBSVM library and worked with very large neural datasets. This project explored the the K-NN and SVM machine learning algorithms to decode a rat's position in a maze using Hippocampal data.
+			The <a href="content/neuraldecoding.pdf">whitepaper</a> is available to read as well.
+		</p>
+	</div>
+	<hr>
+	<div class="boxleft">
+		<h2>Down Syndrome Patient Database</h2>
+		<img class="wider" src = "cheo.jpg" />
+		<br>
+		<p>
+			During my undergraduate degree, I was given a research internship to help the <a href="http://www.cheo.on.ca/en/downsyndromeclinic" /a>Down Syndrome clinic </a> at the Children's Hospital of Eastern Ontario. I was tasked to build a system to help input and store data for the clinic. This data would be used to help with treatment and further research into Down Syndrome. I created the system using PHP and MySQL and it has extended on by succeeding interns. This project is what got me interested in software development and made me realize how big of an impact software can have.
+		</p>
+	</div>
+</div>
+
+</body>
+</html>
