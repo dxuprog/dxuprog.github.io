@@ -82,6 +82,13 @@ nav a:hover {
     max-height: auto;
 }
 
+.boxright iframe {
+	float: right;
+	padding: 10px;
+    max-width: 25%;
+    max-height: auto;
+}
+
 .wider {
 	float: right;
 	padding: 10px;
@@ -99,6 +106,12 @@ nav a:hover {
 }
 
 .boxleft img {
+	float: left;
+	padding: 10px;
+    max-width: 25%;
+    max-height: auto;
+}
+.boxleft iframe {
 	float: left;
 	padding: 10px;
     max-width: 25%;
