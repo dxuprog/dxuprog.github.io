@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <title>Hackathon Blog</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html">David Xu</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./projects.html">Projects & Research</a>
+          </li>
+          <li>
+            <a href="./blog.html">Hackathon Blog</a>
+          </li>
+          <li>
+            <a href="./dxu_resume_web.pdf">Resume</a>
+          </li>
+          <li>
+            <a href="http://ca.linkedin.com/in/dxu228" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.github.com/dxuprog" target="_blank">
+              <i class="fab fa-github-square fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/users/2785233/davidx" target="_blank">
+              <i class="fab fa-stack-overflow fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Hackathon Blog</h1>
+    <h5>This page highlights projects I've done in hackathons in a small bite-sized form.</h5>
+
+    <div>
+      <ul>
+        <li class="toc">
+          <a href="#dec2017"><b>1. Internal Company Hackathon:</b> IoT Devices</a> <i class="red-text">Won best themed!</i>
+        </li>
+        <li class="toc">
+          <a href="#oct2017"><b>2.  ArthritisHack Toronto:</b> Ari Voice Assistant + Platform</a> <i class="red-text">Won people's choice!</i>
+        </li>
+        <li class="toc">
+          <a href="#dec2016"><b>3.  Internal Company Hackathon:</b> Google Voice Assistant</a> <i class="red-text">Won best overall!</i>
+        </li>
+        <li class="toc">
+          <a href="#april2016"><b>4.  HackPrinceton:</b> Running M8</a>
+        </li>
+        <li class="toc">
+          <a href="#jan2016"><b>5.  WaterlooHacks:</b> FoodBox</a>
+        </li>
+        <li class="toc">
+          <a href="#oct2015"><b>6.  Hack The North:</b> Swing</a>
+        </li>
+      </ul>
+    </div>
+    <div class="entry-content">
+      <div class="col-md-12">
+        <h3 class="h3-top date-text" id="dec2017" >December 2017</h3>
+      </div>
+      <div class="col-md-12">
+        <h3>Internal Company Hackathon: IoT Devices</h3>
+      </div>
+      <div>
+        <div class="col-md-8">
+          <h4>
+            What we built
+          </h4>
+          <p>
+            I can't say too much about this once because it's internal. But we utilized an array of
+            <b>Estimote beacons</b> to determine positions of users inside a room. Data from the beacons were aggregated and
+            displayed to a front-end via
+            <b>heatmap.js</b>.
+          </p>
+          <h4>
+            Technology used:
+          </h4>
+          <p>
+            Estimote Proximity Beacons, heatmap.js, AngularJS, Spring Boot
+          </p>
+          <h4>
+            Takeaways:
+          </h4>
+          <p>
+            The beacons last forever, and they are quite small. They can be hid in various spots and are battery powered. In terms of
+            position accuracy they are enough to distinguish someone's position within a couple feet to a beacon.
+            <b>Heatmap.js</b> is also a wonderful library that is simple to use. I can see it being used in a lot with maps
+            and location data.
+          </p>
+          <p>
+            Our team took home
+            <b>Best Themed Category</b>. The other projects we're all incredibly well done. I am amazed by some of the engineers
+            in this company.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="photo" src="./estimote.jpg">
+          <i class="text-center">
+            Estimote Beacons used for IoT proximity tracking via Bluetooth.
+          </i>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="entry-content">
+      <div class="col-md-12">
+        <h3 class="h3-top date-text" id="oct2017">October 2017</h3>
+      </div>
+      <div class="col-md-12">
+        <h3>
+          <a href="https://www.blogto.com/events/arthritishack/">ArthritisHack Toronto</a>: Ari Voice Assistant + Platform</h3>
+      </div>
+      <div>
+        <div class="col-md-8">
+          <h4>
+            What we built
+          </h4>
+          <p>
+            We built a platform in which users could share their knowledge about Arthritis. What surprised us is that many people afflicted
+            with Arthritis have an initial trouble building up a knowledge base about the condition, different treatments,
+            products and patient support programs. It didn't make sense to us that this problem should exist in the information
+            age.
+
+          </p>
+          <p>
+            We decided to build a knowledge platform that users could submit and rate products, articles and healthcare professionals.
+            Kind of like a Yelp for Arthritis.
+          </p>
+          With four developers on our team, we hit the ground running trying to push as much features we could. It was ambitious: a
+          progressive web app in <b>Vue.js</b>, a back-end powered by <b>Firebase</b>, a voice assistant using <b>Google's DialogFlow</b>, and
+          a Chrome extension for seamless integration.
+          </p>
+          <p>
+            In the end, I put together the Firebase back-end which stored the rating content, as well as handled the back-end calls via
+            <b>Google Cloud Functions</b>. I also built the voice assistant.
+          </p>
+          <h4>
+            Technology used:
+          </h4>
+          <p>
+            Vue.js, Firebase Database, Google Cloud Functions (JavaScript), DialogFlow, Chrome Extension Toolkit
+          </p>
+          <h4>
+            Takeaways:
+          </h4>
+          <p>
+            We ended up winning the
+            <b>People's Choice</b> award, which felt great because it was first time I won a public hackathon. I was introduced
+            to Progressive web apps, and what my teammate built in Vue.js was amazing. I think I will look into this concept
+            and framework in future projects. It seems capable enough as a "build once" type app, in which it can handle
+            web, and mobile at the same time. I also went deeper into the DialogFlow API and Google Cloud Functions. I was
+            able to program content-rich responses to Google Assistant, in which voice + a carousel of photo and data was
+            shown to the users.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <iframe class="photo" height="415" src="https://www.youtube.com/embed/60Md00JIP50" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+          <div>
+            <i class="text-center">Demo of the voice assistant integrating live with our server on Firebase.</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="entry-content">
+      <div class="col-md-12">
+        <h3 class="h3-top date-text" id="dec2016">December 2016</h3>
+      </div>
+      <div class="col-md-12">
+        <h3>Company Internal Hackaton:</a> Google Voice Assistant</h3>
+      </div>
+      <div>
+        <div class="col-md-8">
+          <h4>
+            What we built
+          </h4>
+          <p>
+            I can't go into the specifics, but we used Google's DialogFlow (API.AI at the time) to build a voice assistant that interacted
+            with our product. We had to create an "AI Gateway" built in Node.js which acted as a passthrough for routing
+            intents from the Voice Assistant, and translated them into the appropriate server calls. I created a simple <b>AngularJS</b>
+            component and leveraged the voice libraries in HTML5 to prototype a in-app voice assistant, in which Google Assistant
+            wasn't needed.
+          </p>
+          <h4>
+            Technology used:
+          </h4>
+          <p>
+            Google's DialogFlow, Node.js, Spring Boot, AngularJS
+          </p>
+          <h4>
+            Takeaways:
+          </h4>
+          <p>
+            Google's DialogFlow is an amazingly easy to use. It was so natural to build conversation actions, and it had great one-click
+            integrations with popular assistant services such as Google Voice Assistant and Alexa. It's truly a weapon at
+            hackathons because it doesn't take much time to build one, yet the results are so appealing to the audience because
+            of it's novelty.
+          </p>
+          <p>
+            <b>We won best overall!</b> This was the first hackathon I've won and it was a great feeling. There was some really
+            great competition and projects, given that this was company-wide with over 300 engineers participating.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="photo" src="./dialogflow.png">
+          <img class="photo" src="./nodejs.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="entry-content">
+      <div class="col-md-12">
+        <h3 class="h3-top date-text" id="april2016">April 2016</h3>
+      </div>
+      <div class="col-md-12">
+        <h3>
+          <a href="https://hackprincetons2016.devpost.com/">HackPrinceton:</a>
+          <a href="https://devpost.com/software/running-mate-jyepbh">Running M8</a>
+        </h3>
+      </div>
+      <div>
+        <div class="col-md-8">
+          <h4>
+            What we built
+          </h4>
+          <p>
+            We built a Native Android app that would generate jogging paths based on where the user is, and the desired duration. On
+            top of that we built a modified "Sneaker" companion which had turn signals and break lights controlled by the
+            a <b>Myo</b> armband from Thalmic Labs.
+          </p>
+          <h4>
+            Technology used:
+          </h4>
+          <p>
+            Myo Armband, Raspberry Pi, Breadboard + LEDs, Android
+          </p>
+          <h4>
+            Takeaways:
+          </h4>
+          <p>
+            At the time, Thalmic Labs did not have a API available for Linux. This was unfortunate because we wanted to program directly
+            on the Raspberry Pi. However, we found an open source version called Myo Raw which let us do that. We encountered
+            some bugs, but like any good hackathon, we added hacks to get around them. My most unfortuante hack was writing
+            a Unix script to constantly "reboot" connection to the Myo every 10 seconds, because the API would lose signal
+            after that. Also, we learned that Princeton is very far from Waterloo.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <img class="photo" style="padding-bottom: 20px;" src="./myo.jpg">
+          <iframe class="photo" height="315" src="https://www.youtube.com/embed/fqXl15gdVl0" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry-content">
+      <div class="col-md-12">
+        <h3 class="h3-top date-text" id="jan2016">January 2016</h3>
+      </div>
+      <div class="col-md-12">
+        <h3>
+          <a href="https://waterloohacks.devpost.com/">WaterlooHacks:</a>
+          <a href="https://devpost.com/software/foodbox"> Food Box</a>
+        </h3>
+      </div>
+      <div>
+        <div class="col-md-8">
+          <h4>
+            What we built
+          </h4>
+          <p>
+            FoodBox is a mobile application that tracks perishable foods and notifies users of expiry dates. We used <b>Clarifai deep-learning
+            API</b> to identify foods so users can log food with their camera. Users can track their friends perishables through
+            the application and collaborate on recipes suggested by the app. I implemented the back-end service powered by
+            <b>Firebase</b> as well as integrated the machine learning API to the camera.
+          </p>
+          <h4>
+            Technology used:
+          </h4>
+          <p>
+            Clarifai (Machine Learning API), Android, Firebase, Edaman (Recipe API)
+          </p>
+          <h4>
+            Takeaways:
+          </h4>
+          <p>
+            Firebase is easy to learn but a little to master. I found that Firebase is perfect for hackathons due to it's free-to-use
+            license, and quick start up times. The real-time data integration on Android took a lot work off our plates.
+            Machine learning for food identification is viable, but in the end it often requires human validation.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <iframe class="photo" height="350" src="https://www.youtube.com/embed/1TjB7Ww69VQ" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="entry-content">
+      <div class="col-md-12">
+        <h3 class="h3-top date-text" id="oct2015">October 2015</h3>
+      </div>
+      <div class="col-md-12">
+        <h3>
+          <a href="https://hackthenorth2015.devpost.com/">Hack The North 2015:</a>
+          <a href="https://devpost.com/software/hack-the-north-axe"> Swing</a>
+        </h3>
+      </div>
+      <div>
+        <div class="col-md-8">
+          <h4>
+            What we built
+          </h4>
+          <p>
+            we built a prototype application that acts as a digital coach for the sport of axe throwing. Our idea was to attach an Internet
+            of Things sensor onto the axe and have it read measurments such as rotations and acceleration. I implemented
+            our idea into an Android mobile application by extending the base source code provided by the manufactuer, and
+            configured the device to send the measurements we needed
+          </p>
+          <h4>
+            Technology used:
+          </h4>
+          <p>
+            A physical Axe, Android, Texas Instruments IoT Device,
+          </p>
+          <h4>
+            Takeaways:
+          </h4>
+          <p>
+            This was my first major hackathon and I realized how much I love hackathons. The organizers and participants were amazing.
+            I also learned how to throw an axe.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <iframe class="photo" height="315" src="https://www.youtube.com/embed/czMtwX2BOSc" frameborder="0" allow="autoplay; encrypted-media"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="container">
+      <h3>
+        Contact
+      </h3>
+      <p>
+        I'm currently in Toronto, Ontario. Feel free to reach me at dxuprog [~AT~] gmail (DOT) com.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

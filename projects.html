@@ -1,117 +1,184 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>David Xu - Projects</title>
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <title>Projects & Research</title>
 </head>
 
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="./index.html">David Xu</a>
+      </div>
 
-<div class="davidxu">
-	DAVID XU
-</div>
+      <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./projects.html">Projects & Research</a>
+          </li>
+          <li>
+            <a href="./blog.html">Hackathon Blog</a>
+          </li>
+          <li>
+            <a href="./dxu_resume_web.pdf">Resume</a>
+          </li>
+          <li>
+            <a href="http://ca.linkedin.com/in/dxu228" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.github.com/dxuprog" target="_blank">
+              <i class="fab fa-github-square fa-2x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/users/2785233/davidx" target="_blank">
+              <i class="fab fa-stack-overflow fa-2x"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="navbar">
-<nav>
-	<a href="index.html">About Me</a>
-	<a href="projects.html">Projects</a>
-	<a href="content/dxu_resume_web.pdf">Resume</a>
-	<a href="http://www.github.com/dxuprog">GitHub</a>
-	<a href="http://ca.linkedin.com/in/dxu228">LinkedIn</a>
-</nav>
-</div>
 
-<div class="container">
-	<h1>Projects</h1>
 
-<hr>
-	<div class="boxright">
-		<h2>Canadian Income Tax Calculator</h2>
-		<img src = "incomeTax.png" class="narrower" />
+  <div class="container">
+    <h1>Projects & Research</h1>
+    <div class="entry-content">
+      <div class="col-md-12">
+        <h3 class="h3-top">Canadian Income Tax Calculator</h3>
+      </div>
+      <div>
+        <div class="col-md-8">
+          <div>
+            <p>
+              After recieving my first pay-stub, I was curious about how income tax was calculated. I decided to investigate the Canadian
+              income tax system further and I thought it would be a good idea to create lightweight mobile application. This
+              would serve as a tool to those who want to quickly estimate their post-tax salaries.
+            </p>
+            <p>
+              I became familiar with the <b>BlackBerry 10 (C++ / Qt)</b> development platform and launched the application on native BlackBerry. But after switching my personal phone to Android, I decided to develop
+              native <b>Android (Java)</b> version as well. I eventually played around with the Ionic Framework, and decided to re-build the app using <b>Ionic 2 (TypeScript & Angular)</b>. 
+              I launched the app on iOS recently, and ported the hybrid app onto Android. Since the app's inception, it has garnered <b>over 50,000</b> cross-platform downloads.
+            </p>
+          </div>
+          <div>
+            <div class="col-md-12">
+              <a href='https://play.google.com/store/apps/details?id=davidxu.canadianincometax&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                target="_blank">
+                <img class="app-link" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'
+                />
+              </a>
+              <a href='https://itunes.apple.com/ca/app/canada-income-tax-calculator/id1322904901' target="_blank">
+                <img class="app-link-apple" alt='Download on the App Store' src='./appleAppStoreLogo.svg' />
+              </a>
+              <a href='https://appworld.blackberry.com/webstore/content/59988673/?lang=en&countrycode=CA' target="_blank">
+                <img class="app-link-bb" alt='Download on BlackBerry World' src='./bbAppStore.jpg' />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img class="photo" src="incomeTax.png">
+        </div>
+      </div>
+    </div>
 
-		<br>
-		<p>
-			After recieving my first pay-stub, I was curious about how income tax was calculated.
-			I decided to investigate the Canadian income tax system further and I thought it would be a good idea to create lightweight mobile application. This would serve as a tool to those who want to quickly estimate their post-tax salaries.
-		</p>
-		<p>
-			I became familiar with the BlackBerry 10 (C++ / Qt) development platform and launched the application <a href="https://appworld.blackberry.com/webstore/content/59988673/?lang=en&countrycode=CA"/>on BlackBerry World</a>. But after switching my personal phone to Android, I decided to develop <a href="https://play.google.com/store/apps/details?id=davidxu.canadianincometax&hl=en" />an Android version</a> as well. I eventually replaced my BlackBerry version with a ported Android version.
+    <div class="entry-content">
+      <div class="col-md-12">
+        <h3 class="h3-top">Symmetric Predictive Estimators (Neural Networks)</h3>
+      </div>
+      <div>
+        <div class="col-md-6">
+          <p>
+            I enrolled into a Master's of Computer Science program at the University of Waterloo to pursue my interests in Computational Neuroscience
+            and machine learning. My thesis focused on Predictive Estimators, a theory of how the brain processes bottom-up and top-down information.
+            My professor Jeff Orchard, and I proposed a Symmetric Predictive Estimator, a biologically plausible model of how the brain perceives information
+            from sensory input (e.g. eyes), and top-down information (e.g. conciousness). We used the spiking neural framework written in <b>Python</b>, called 
+            <b><a href="https://www.nengo.ai/" target="_blank">Nengo</a></b>, which powers <b>Spaun</b>, the world's largest functional brain model.
+          </p>
+          <p></p>
+            This research was published in the <a href="http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=5962385">IEEE Transactions on Neural Networks and Learning Systems</a>, and presented at 
+            <a href="http://www.cosyne.org/c/index.php?title=Cosyne_18">COSYNE 2016</a> (Computational and Systems Neuroscience).
+          </p>
+          <div>
+              <a class="weblink" href="http://ieeexplore.ieee.org/document/8082531/" target="_blank">IEEE Paper</a>
+              <a class="weblink" href="./cosyne2016Poster.pdf" target="_blank">COSYNE Poster</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="hidden-xs photo-wide" src="identity_learning.gif">
+          <img class="visible-xs photo-wide-xs" src="identity_learning.gif">
+          <i class="text-center">Simultaneous learning of forward and backward identity functions in a biologically plausible, spiking neural network.</i>
+        </div>
+      </div>
+    </div>
 
-			To this date, the application has recieved positive feedback and has <b>over 20,000</b> cross-platform downloads.
-		</p>
-	</div>
+    <div class="entry-content">
+        <div class="col-md-12">
+          <h3 class="h3-top">Brain Decoding of Mice Hippocampus</h3>
+        </div>
+        <div>
+          <div class="col-md-8">
+            <p>
+              The <a href="https://www.nobelprize.org/nobel_prizes/medicine/laureates/2014/press.html">2014 Nobel Prize Physiology or Medicine</a> were
+              awarded to a group of scientists who were able to decode brain signals in mice and relate them to a location inside a maze.
+              This discovery led to the Hippocampus playing a role of an internal GPS. In general, based on neuron firing patterns, it is possible
+              to determine (or read the mind) of where a mice is in a maze.
+            </p>
+            <p>
+              Using similar datasets, I decided to benchmark various machine learning techniques and evaluate the accuracy and speed
+              each technique has when decoding neural signals in the hippocampus. I tested custom <b>K-Nearest Neighbor algorithm</b>, as well as
+              a tuned <b>SVM</b> classifier. 
+            </p>
+            <p>
+              <a class="weblink" href="./neuralDecoding.pdf" target="_blank">Whitepaper</a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img class="photo" src="trackSetup.png">
+            <i class="text-center">Using neural signals from mice's Hippocampus, you can decode the mice's interal map, and determine position.
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-	<hr>
-	<div class="boxleft">
-		<h2>Linking Android documentation to code examples on StackOverflow</h2>
-		<img class="wider" src = "androidDocs.png" />
+  <footer>
+    <div class="container">
+      <h3>
+        Contact
+      </h3>
+      <p>
+        I'm currently in Toronto, Ontario. Feel free to reach me at dxuprog [~AT~] gmail (DOT) com.
+      </p>
+    </div>
+  </footer>
 
-		<br>
-		<p>
-			I incorporate what I've learned in machine learning, along with my experience in software engineering to create a tool to help Android developers find code examples.
-
-		</p>
-		<p>
-			Using research and data from the Software Architecture Group at uWaterloo, myself and <a href="https://github.com/adriaanlabusc"> Adriaan </a> were able to extract Fully Qualified Names (FQNs) from StackOverflow code snippets and use them as features to build algorithms in Python for document relations.
-
-		</p>
-
-		<p>
-			We provide a usable Chrome plugin that will augment Android documentation with links to StackOverflow. The tool provides links sorted by complexity, which is a tf-idf weighted score defined by the number of different Fully Qualified Names (FQNs) that are used in the snippet. This allows the user to pick how 'detailed' their example will be. 
-		</p>
-		<p>
-			Installation instructions are located on the <a href="https://github.com/dxuprog/androidDocsAugment"> public GitHub repository</a>. We also explore augmenting of StackOverflow snippets, as well as finding related questions based on FQN features, outlined in our <a href="https://github.com/dxuprog/androidDocsAugment/blob/master/androidDocsAugmentWhitePaper.pdf"> 
-			whitepaper</a>.
-		</p>
-	</div>
-
-	<hr>
-	<div class="boxright">
-		<h2>Machine learning methods for neural decoding</h2>
-		<img src = "neuraldecode.png" />
-
-		<br>
-		<p>
-			I was introduced to the world of machine learning through the graduate level machine learning course at uWaterloo. For this project I worked with neurological data to investigate different machine learning methods to decode brain data. The focus was on Hippocampal place cells in a rat that act as a internal GPS. I used MATLAB, and LIBSVM library and worked with very large neural datasets. This project explored the the K-NN and SVM machine learning algorithms to decode a rat's position in a maze using Hippocampal data.
-			The <a href="content/neuraldecoding.pdf">whitepaper</a> is available to read as well.
-		</p>
-	</div>
-	<hr>
-	<div class="boxleft">
-		<h2>FoodBox</h2>
-<iframe width="426" height="240" src="https://www.youtube.com/embed/1TjB7Ww69VQ" frameborder="0" allowfullscreen></iframe>
-
-		<br>
-		<p>
-			<a href="http://devpost.com/software/foodbox">FoodBox</a> is a mobile application that tracks perishable foods and notifies users of expiry dates. We used Clarifai deep-learning API to identify foods so users can log food with their camera. Users can track their friends perishables through the application and collaborate on recipes suggested by the app. I implemented the back-end service powered by Firebase as well as integrated the machine learning API to the camera. This is an ambitious project started by four developers at WaterlooHacks 2016, and is in continuous development.
-
-		</p>
-	</div>
-	<hr>
-	<div class="boxright">
-		<h2>Hack The North 2015 Project: Swing</h2>
-<iframe width="426" height="240" src="https://www.youtube.com/embed/czMtwX2BOSc" frameborder="0" allowfullscreen></iframe>
-
-		<br>
-		<p>
-			In the span of 36-hours we built a prototype application that acts as a digital coach for the sport of axe throwing. Our idea was to attach an Internet of Things sensor onto the axe and have it read measurments such as rotations and acceleration. I implemented our idea into an Android mobile application by extending the base source code provided by the manufactuer, and configured the device to send the measurements we needed. An overview is available on 
-<a href="http://devpost.com/software/hack-the-north-axe">DevPost</a>.
-
-		</p>
-	</div>
-
-	<hr>
-	<div class="boxleft">
-		<h2>Down Syndrome Patient Database</h2>
-		<img class="wider" src = "cheo.jpg" />
-		<br>
-		<p>
-			During my undergraduate degree, I was given a research internship to help the <a href="http://www.cheo.on.ca/en/downsyndromeclinic" /a>Down Syndrome clinic </a> at the Children's Hospital of Eastern Ontario. I was tasked to build a system to help input and store data for the clinic. This data would be used to help with treatment and further research into Down Syndrome. I created the system using PHP and MySQL and it has extended on by succeeding interns. This project is what got me interested in software development and made me realize how big of an impact software can have.
-		</p>
-	</div>
-</div>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
